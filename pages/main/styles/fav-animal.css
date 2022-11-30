@@ -1,0 +1,225 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.panda-section {
+    background: url('../../../assets/images/Giant\ Panda.jpg') no-repeat;
+    object-fit: fill;
+    right: 0;
+    width: 100%;
+    background-size: 100%;
+}
+
+.fav-animal-content {
+    height: 780px;
+    display: flex;
+}
+
+.fav-animal-container {
+    margin-right: 220px;
+    margin-left: 220px;
+}
+
+.fav-animal-text {
+    position: absolute;
+    text-align: center;
+    font-size: 106px;
+    font-weight: 700;
+    line-height: 75%;
+    text-transform: uppercase;
+    right: 219.69px;
+    top: 166px;
+    color: white;
+}
+
+.elipse-logo {
+    position: absolute;
+    right: 318px;
+    top: 92px;
+}
+
+.text-color{
+    color: #FFEE2E;
+}
+
+.watch-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    text-decoration: none;
+    text-transform: uppercase;
+    color: white;
+    font-family: 'Roboto';
+    font-weight: 500;
+    font-size: 16px;
+    width: 298px;
+    height: 54px;
+    top: 626px;
+    right: 319px;
+    background: linear-gradient(113.96deg, #F9804B 1.49%, #FE9013 101.44%);
+    border-radius: 25px;
+    border: 0;
+}
+
+.watch-button:hover {
+    cursor: pointer;
+    background: linear-gradient(113.96deg, #F9804B 3.49%, #FE9013 200.44%);
+}
+
+@media only screen and (max-width: 1000px) {
+    .panda-section {
+        background-size: cover;
+        background-position-x: -99px;
+        margin-top: 0;
+        height: 584px;
+        width: 1000px;
+        overflow-x: hidden;
+    }
+
+    .fav-animal-content {
+        height: 584px;
+        z-index: 20;
+    }
+
+    .fav-animal-container {
+        position: relative;
+        margin-left: 555px;
+        margin-right: 185px;
+    }
+
+    .elipse-logo {
+        right:0;
+        left: -100px;
+        top: 69px;
+    }
+
+    .elipse-image {
+        width: 367px;
+        height: 367px;
+    }
+
+    .fav-animal-text {
+        font-size: 85px;
+        line-height: 63.9px;
+        right: 0;
+        top: 122.8px;
+        left: -25px;
+        text-align: center;
+        width: 350px;
+    }
+
+    .watch-button {
+        top: 483px;
+        left: 11px;
+        right: 0;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .panda-section {
+        background-position-x: -63.23px;
+        height: 373px;
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .fav-animal-container {
+        margin-left: 330px;
+        margin-right: auto;
+    }
+
+    .fav-animal-content {
+        height: 373px;
+    }
+
+    .elipse-logo {
+        left: 0;
+        top: 45px;
+
+    }
+
+    .elipse-image {
+        width: 237.6px;
+        height: 237.6px;
+    }
+
+    .fav-animal-text {
+        font-size: 54.42px;
+        line-height: 40.81px;
+        left: -7px;
+        top: 84px;    
+    }
+
+    .watch-button {
+        left: -309px;
+        top: 279px;
+    }
+}
+
+@media screen and (max-width: 320px) {
+
+    .panda-section {
+        background: url(../../../assets/images/Giant\ Panda320px.jpg);
+        height: 186.96px;
+        width: 320px;
+        margin-top: 34px;
+        background-position-x: -0.31px;
+        overflow-x: hidden;
+    }
+
+    .fav-animal-container {
+        margin-left: 162.9px;
+    }
+
+    .fav-animal-content {
+        height: auto;
+    }
+
+    .elipse-logo {
+       top: 22px;
+    }
+
+    .elipse-image {
+        width: 119.09px;
+        height: 119.09px;
+    }
+
+    .fav-animal-text {
+        font-size: 27.21px;
+        line-height: 20.41px;
+        left: -92px;
+        top: 42px;
+    }
+
+    .watch-button {
+        display: none;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+    .panda-section {
+        width: 100%;
+        overflow-x: hidden;
+        background-size: auto;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+    .panda-section {
+        width: 100%;
+    }
+
+    .fav-animal-container {
+        margin-left: 200px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 639px) {
+    .fav-animal-container {
+        margin-left: 30px;
+    }
+
+    .watch-button {
+        left: -20px;
+        top: 300px;
+    }
+}

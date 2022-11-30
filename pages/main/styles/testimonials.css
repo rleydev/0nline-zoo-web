@@ -1,0 +1,562 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.testimonials-section {
+    position: absolute;
+    top: 3613px;
+    left: 0;
+    right: 0;
+    width: 100%;
+    height: 919px;
+}
+
+.main-testimonials-container {
+    height: 779px;
+    position: absolute;
+    top: 140px;
+    left: 220px;
+    right: 220px;
+    width: 1160px;
+    bottom: 180px;
+}
+
+.testimonials-title {
+    height: 47px;
+    margin-left: 477px;
+}
+
+.customer-feedback-container {
+    height: 391px;
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: 268px 268px 268px;
+    align-items: center;
+    gap: 30px;
+    margin-top: 47px;
+    overflow-x: hidden;
+    width: 100%;
+}
+
+.feedback-frame {
+    height: 391px;
+    width: 268px;
+    padding: 2px;
+    border-radius: 20px;
+    background: linear-gradient(to bottom right,rgba(234, 247, 254, 1),
+    rgba(234, 247, 254, 1), rgba(224, 216, 240, 1), 
+    rgba(243, 169, 248, 0.66), rgba(254, 189, 171, 0.74));
+    transition-duration: 1s;
+}
+
+.feedback-active {
+    transform: rotate(360deg);
+}
+
+.feedback-container {
+    position: relative;
+    width: 263px;
+    height: 387px;
+    border-radius: 20px;
+    column-gap: 10px;
+    margin: 0;
+    background-color: rgba(241, 243, 242, 1);
+}
+
+.person-inf-container {
+    width: 237px;
+    display: flex;
+    flex-direction: row;
+    grid-template-rows: 37px 1fr;
+    gap: 10px;
+    position: relative;
+    top: 12px;
+    left: 14px;
+}
+
+.person-avatar {
+    border-radius: 50%;
+    width: 37px;
+    height: 37px;
+}
+
+.user-name-location-container {
+    display: flex;
+    flex-direction: column;
+    grid-template-columns: 19px 18px;
+    gap: 1px;
+}
+
+.user-name-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 19px;
+}
+
+.user-location-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: #BDBDBD;
+}
+
+.feedback-text {
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color:rgba(118, 116, 116, 1);
+
+    position: relative;
+    left: 14px;
+    top: 25px;
+    width: 237px;
+}
+
+.slider-border {
+    display: flex;
+    align-items: center;
+    margin-left: 280px;
+    margin-top: 21px;
+    border-radius: 5px;
+    width: 600px;
+    height: 9px;
+    background: linear-gradient(to bottom,rgba(234, 247, 254, 1),
+    rgba(234, 247, 254, 1), rgba(224, 216, 240, 1), 
+    rgba(243, 169, 248, 0.66), rgba(254, 189, 171, 0.74));
+}
+
+.feedback-input {
+    width: 599px;
+    height: 8px;
+}
+
+.feedback-input[type="range"] {
+    -webkit-appearance:none !important;
+    width: 599px;
+    height:8px;
+    background: rgba(245, 247, 246, 1);
+    border: rgba(254, 189, 171, 0.74);
+    border-radius: 5px;
+    outline: none;
+}
+
+.feedback-input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance:none !important;
+    width: 115.19px;
+    height: 6px;
+    background: rgba(254, 144, 19, 1);
+    border-radius: 5px;
+    cursor: ew-resize;
+}
+
+.leave-feedback-button {
+    width: 298px;
+    height: 54px;
+    position: absolute;
+    bottom: 180px;
+    margin-left: 0;
+    border: none;
+    border-radius: 5px;
+    background-image: linear-gradient(to left, rgba(254, 144, 19, 1), rgba(249, 128, 75, 1));
+}
+
+.leave-feedback-button:hover {
+    cursor: pointer;
+    background: rgb(219, 150, 120);
+}
+
+.text-leave {
+    position: relative;
+    top: 16px;
+    text-transform: uppercase;
+    color: white;
+    text-align: center;
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 500;
+}
+
+.leaf-image {
+    object-fit: fill;
+    position: absolute;
+    top: 644.52px;
+    right: 0;
+}
+
+.popup-review {
+    display: none;
+}
+
+.person-inf-container-1600-1000px {
+    display: none;
+}
+
+.feedback-text-popup {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+
+
+
+    .testimonials-section {
+        height: 842px;
+        top: 3204px;
+    }
+
+    .main-testimonials-container {
+        top: 100px;
+        left: 30px;
+        width: auto;
+        bottom: 140px;
+        right: 30px;
+    }
+
+    .testimonials-title {
+        margin-left: 367px;
+    }
+
+    .customer-feedback-container {
+        margin-top: 30px;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .customer-feedback-container .feedback-frame:nth-child(4) {
+        display: none;
+    }
+
+    .feedback-frame {
+        width: 293px;
+    }
+
+    .feedback-container {
+        width: 290px;
+    }
+
+    .person-inf-container {
+        left: 16px;
+    }
+
+    .feedback-text {
+        width: 259px;
+    }
+
+    .slider-border {
+        margin-top: 20px;
+        margin-left: 270px;
+        width: 390px;
+    }
+
+    .feedback-input[type="range"] {
+        width: 388px;
+    }
+
+    .feedback-input[type="range"]::-webkit-slider-thumb {
+        width: 75px;
+    }
+
+    .leave-feedback-button {
+        top: 548px;
+    }
+
+    .leaf-image {
+        content: url(../../../assets/images/leav_foto1000px.png);
+        top: 605px; 
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .testimonials-section {
+        top: 2630px;
+        overflow: hidden;
+    }
+
+    .main-testimonials-container {
+        top: 60px;
+        height: 528px;
+        left: 20px;
+        right: 20px;
+    }
+
+    .testimonials-title {
+        margin-left: 195px;
+    }
+
+    .customer-feedback-container {
+        grid-template-rows: none;
+        flex-direction: column;
+        grid-template-columns: 109px 109px 109px;
+        gap: 15px;
+        overflow: hidden;
+        height: 370px;
+    }
+
+    .feedback-frame {
+        height: 109px;
+        width: 600px;
+    }
+
+    .feedback-container {
+        width: 597px;
+        height: 107px;
+    }
+
+    .person-inf-container {
+        left: 12px;
+        top:15px;
+    }
+
+    .feedback-text {
+        width: 565px;
+        height: 35px;
+        overflow: hidden;
+    }
+
+    .slider-border {
+        display: none;
+    }
+
+    .leave-feedback-button {
+        top: 475px;
+        width: 240px;
+        margin-left: 180px;
+    }
+
+    .leaf-image {
+        content: url(../../../assets/images/leafe_foto640px.png);
+        top: 535px;
+    }
+
+    .popup-review {
+        display: none;
+        position: fixed;
+        left: 0;
+        top: 0;
+        right: 0;
+        bottom: 0;
+        width: 100%;
+        height: 100%;
+        background: rgba(104, 103, 103, 0.7);
+        z-index: 97;
+    }
+
+    .popup-review-area {
+        width: 320px;
+        height: 428px;
+        background-color: rgba(241, 243, 242, 1);;
+    }
+    
+    .feedback-frame-popup {
+        margin-top: 20px;
+        margin-left: 5px;
+        display: none;
+        width: 267px;
+        height: 391px;
+        padding: 2px;
+        border-radius: 20px;
+        background: linear-gradient(to bottom right,rgba(234, 247, 254, 1),
+        rgba(234, 247, 254, 1), rgba(224, 216, 240, 1), 
+        rgba(243, 169, 248, 0.66), rgba(254, 189, 171, 0.74));
+        transition-duration: 1s;
+    }
+
+    .feedback-container-popup {
+      
+        margin-top: 1px;
+        margin-left: 1px;
+        width: 262px;
+        height: 385px;
+        border-radius: 20px;
+        background-color: rgba(241, 243, 242, 1);
+    }
+
+    .exit-icon-review {
+        margin-top: 5px;
+        width: 14px;
+        height: 14px;
+        margin-left: 25px;
+    }
+
+    .expand-container-popup {
+        width: 170px;
+    }
+
+    .feedback-text-popup {
+        display: block;
+        font-weight: 'Roboto';
+        font-weight: 300;
+        font-size: 15px;
+        line-height: 18px;
+        color: #767474;
+        margin-top: 20px;
+        margin-left: 10px;
+        width: 237px;
+        height: 309px;
+    }
+
+    .person-inf-container-1600-1000px {
+        display: flex;
+    }
+
+}
+
+@media screen and (max-width: 320px) {
+    .testimonials-section {
+        top: 3357px;
+    }
+
+    .main-testimonials-container {
+        height: 490px;
+        top: 30px;
+        left: 11px;
+        right: 10px;
+    }
+
+    .testimonials-title {
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-left: 81px;
+    }
+
+    .customer-feedback-container {
+        margin-top: 3px;
+    }
+
+    .feedback-frame {
+        width: 299px;
+    }
+
+    .feedback-container {
+        width: 295px;
+        height: 105px;
+    }
+    .person-inf-container {
+        width: auto;
+        top: 7px;
+        left: 10px;
+        gap: 6px;
+    }
+
+    .feedback-text {
+        width: 279px;
+        left: 15px;
+        top: 18px;
+    }
+
+    .leave-feedback-button {
+        top: 436px;
+        left: -150px;
+    }
+
+    .leaf-image {
+        content: url(../../../assets/icons/leav_foto320px.png);
+        top: 516.47px;;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+    .customer-feedback-container {
+        width: 860px;
+        overflow: hidden;
+    }
+
+    .testimonials-section {
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .main-testimonials-container {
+        left: 30px;
+        width: 860px;
+    }
+
+    .testimonials-title {
+        margin-left: 300px;
+    }
+
+    .customer-feedback-container .feedback-frame:nth-child(4) {
+        display: none;
+        width: auto;
+    }
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+
+
+    .testimonials-title {
+        margin-left: 100px;
+    }
+
+    .main-testimonials-container {
+        left: 50px;
+    }
+
+    .customer-feedback-container {
+        flex-direction: column;
+        height: 480px;
+        width: 550px;
+        gap: 10px;
+        overflow: hidden;
+    }
+
+    .feedback-frame {
+        width: 503px;
+        height: 153px;
+    }
+
+    .feedback-container {
+        width: 500px;
+        height: 150px;
+        overflow: hidden;
+    }
+    .feedback-text {
+        width: 450px;
+        height: 75px;
+        overflow: hidden;
+    }
+
+    .slider-border {
+        display: none;
+        margin-left: -15px;
+    }
+
+    .leave-feedback-button {
+        top: 640px;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 639px) {
+
+    .main-testimonials-container {
+        left: 7px;
+        right: 7px;
+    }
+
+    .testimonials-title {
+        margin-left: 60px;
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+    .feedback-frame {
+        width: 304px;
+        height: 110px;
+    }
+
+    .feedback-container {
+        width: 300px;
+    }
+
+    .person-inf-container {
+        width: 250px;
+    }
+
+    .feedback-text {
+        width: 250px;
+    }
+
+    .leave-feedback-button {
+        margin-left: 0px;
+    }
+}

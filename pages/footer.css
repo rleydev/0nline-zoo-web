@@ -1,0 +1,647 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.main-footer {
+    position: absolute;
+    top: 4532px;
+    left: 0;
+    width: 100%;
+    height: 443px;
+    background-color: black;
+}
+
+.donate-footer {
+    position: absolute;
+    top: 1948px;
+    width: 100%;
+    height: 443px;
+    background-color: black;
+}
+
+.main-footer-container {
+    position: absolute;
+    margin-left: 220px;
+    margin-top: 41px;
+    width: 1151px;
+    height: 352px;
+    display: flex;
+    flex-direction: row;
+}
+
+.left-footer-container {
+    height: 352px;
+    width: 298px;
+    display: flex;
+    flex-direction: column;
+    gap: 44px;
+}
+
+.logo-donate-button-container {
+    width: 298px;
+    height: 174px;
+    display: flex;
+    flex-direction: column;
+    gap: 68px;
+}
+
+.footer-logo {
+    display: block;
+    height: 52px;
+    width: 82px;
+    border: solid white 1px;
+    border-radius: 2px;
+    align-items: center;
+    justify-content: center;
+}
+
+.pet-story-footer-logo-title {
+    margin-top: 0.55px;;
+}
+
+.footer-logo img {
+    position: absolute;
+    margin-top: -3.3px;
+    margin-left: -56.6px;
+}
+
+.donate-footer-button {
+    width: 298px;
+    height: 54px;
+    border-radius: 5px;
+    background-image: linear-gradient(to bottom right, rgba(249, 128, 75, 1), rgba(254, 144, 19, 1));
+}
+
+.donate-footer-button:hover {
+    cursor: pointer;
+    background: rgb(219, 150, 120);;
+}
+
+.donate-footer-text {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22px;
+    text-transform: uppercase;
+    color: white;
+
+    position: relative;
+    top: 16px;
+    text-align: center;
+}
+
+.social-media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.social-media-item-container {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    align-items: center;
+}
+
+.social-media-icon-background {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 26px;
+    height: 26px;
+    border-radius: 50%;
+    background-color: rgba(196, 196, 196, 0.5);
+}
+
+.social-media-icon-background:hover {
+    background-color: lightgray;
+}
+
+.social-media-icon {
+    object-fit: fill;
+}
+
+.social-media-title {
+    font-family: 'Roboto';
+    font-size: 16px;
+    line-height: 22px;
+    font-weight: 400;
+    color: white;
+}
+
+.social-media-title:hover {
+    text-decoration: underline;
+}
+
+.footer-nav-link-container {
+    width: 362px;
+    height: 22px;
+    
+    margin-top: 330px;
+    margin-left: 101px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+}
+
+.footer-about-link {
+    color: white;
+    font-family: 'Roboto';
+    width: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+.footer-about-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-about-link-active {
+    cursor: default;
+    font-family: 'Roboto';
+    background: -webkit-linear-gradient(rgb(249, 128, 75), rgb(254, 144, 19));
+	-webkit-background-clip: text;
+	-webkit-text-fill-color: transparent;
+    width: 43px;
+    color: white;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+.footer-map-link {
+    color: white;
+    font-family: 'Roboto';
+    width: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+.footer-map-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-zoos-link {
+    color: white;
+    font-family: 'Roboto';
+    width: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+.footer-zoos-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.footer-contact-link {
+    color: white;
+    font-family: 'Roboto';
+    width: 32px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+    width: 77px;
+}
+
+.footer-contact-link:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
+
+.right-footer-container {
+    width: 368px;
+    height: 351px;
+    margin-left: 32px;
+}
+
+.input-footer-container {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.footer-email-label {
+    font-family: 'Roboto';
+    width: 237px;
+    font-size: 24px;
+    font-weight: 400px;
+    line-height: 29px;
+    color: white;
+}
+
+.input-email-form {
+    width: 467px;
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+}
+
+.border-input {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 228px;
+    height: 42px;
+    border-radius: 5px;
+    background: linear-gradient(to bottom right, 
+    rgba(249, 128, 75, 1), rgba(254, 144, 19, 1));
+}
+
+.email {
+    width: 227px;
+    height: 41px;
+
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+    color: #BDBDBD;
+    border-radius: 5px;
+    border: none;
+    padding: 9px;
+    background-color: black;
+
+}
+
+.footer-submit-button {
+    width: 129px;
+    height: 42px;
+    color: rgba(51, 59, 65, 1);
+    background-color: rgba(241, 243, 242, 1);
+    border: 1px solid;
+    border-radius: 5px;
+}
+
+.footer-submit-button:hover {
+    cursor: pointer;
+    background: rgb(255, 252, 252, 0.7);
+}
+
+.site-authors-container {
+    position: absolute;
+    right: 0;
+    bottom: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.authors-text {
+    font-size: 16px;
+    font-weight: 100;
+    line-height: 21px;
+    color: rgb(255, 255, 255, 0.5);
+}
+
+@media screen and (max-width: 1000px) {
+    .main-footer {
+        top: 4046px;
+        overflow-x: hidden;
+    }
+
+    .main-footer-container {
+        margin-left: 30px;
+    }
+
+    .footer-nav-link-container {
+        margin-left: -8px;
+        gap: 48px;
+    }
+
+    .right-footer-container {
+        margin-left: -112px;
+        width: auto;
+    }
+
+    .footer-submit-button {
+        font-family: 'Roboto';
+        font-size: 16px;
+    }
+
+    .input-footer-container {
+        margin-left: 15px;
+    }
+
+    .input-email-form {
+        width: auto;
+    }
+
+    .site-authors-container {
+        left: 710px;
+        right: 31px;
+    }
+
+    .donate-footer {
+        top: 1803px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .donate-main-footer-container {
+        margin-left: 31px;
+    }
+
+    .donate-footer-nav-link-container {
+        margin-left: 4px;
+        gap: 60px;
+    }
+
+    .footer-zoos-link {
+        margin-left: 0px;
+    }
+
+    .footer-contact-link {
+        margin-left: 3px;
+    }
+
+    .right-footer-container {
+        margin-left: -125px;
+    }
+
+    .donate-input-footer-container {
+        margin-left: 0px;
+    }
+
+    .donate-zoo-link {
+        margin-left: -10px;
+    }
+
+    .donate-contact-link {
+        margin-left: -10px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+    .main-footer {
+        top: 3299px;
+        overflow: hidden;
+        height: 282px;
+    }
+
+    .left-footer-container {
+        height: auto;
+    }
+
+    .right-footer-container {
+        height: auto;
+    }
+
+    .main-footer-container {
+        width: 600px;
+        height: 257px;
+        margin-left: 21px;
+        margin-top: 13px;
+    }
+
+    .input-footer-container {
+        display: none;
+    }
+
+    .logo-donate-button-container {
+        gap:32px;
+    }
+
+    .social-media-container {
+        position: absolute;
+        top: 0;
+        right: 0 ;
+        gap: 20px;
+    }
+
+    .social-media-title {
+        display: none;
+    }
+
+    .footer-nav-link-container {
+        margin-left: 0;
+        margin-top: 0;
+        gap: 30px;
+        width: auto;
+        position: absolute;
+        top: 235px;
+        left: 0;
+    }
+
+    .footer-zoos-link {
+        margin-left: 0;
+    }
+
+    .footer-contact-link {
+        margin-left: 10px;
+    }
+
+    .site-authors-container {
+        left: 372px;
+        top: 205px;
+        right: -5px;
+    }
+
+    .donate-footer {
+        top: 1702px;
+        height: 282px;
+    }
+
+    .footer-map-link {
+        margin-left: 8px;
+    }
+
+    .footer-zoos-link {
+        margin-left: 5px;
+    }
+
+    .donate-map-link {
+        margin-left: 18px;
+    }
+}   
+
+@media screen and (max-width: 320px) {
+    .main-footer {
+        top: 3937px;
+        height: 334px;
+    }
+
+    .main-footer-container {
+        margin-top: 20px;
+        margin-left: 10px;
+        height: auto;
+        width: auto;
+        margin-bottom: 20px;
+        flex-direction: column;
+    }
+
+    .left-footer-container {
+       gap: 249px;
+    }
+
+    .logo-donate-button-container {
+        width: auto;
+        height: 23px;
+        gap: 0;
+    }
+
+    .footer-logo {
+        border: none;
+        width: auto;
+        height: auto;
+    }
+
+    .pet-story-footer-logo-title {
+        margin-top: 0;
+    }
+
+    .donate-footer-button {
+        position: absolute;
+        top: 109px;
+        left: 0;
+    }
+
+    .social-media-container {
+        flex-direction: row;
+        gap: 30px;
+        left: 53px;
+        top: 53px;
+    }
+
+    .footer-nav-link-container {
+        gap: 30px;
+        top: 273px;
+        left: 11px;
+    }
+
+    .footer-map-link {
+        margin-left: 0;
+    }
+
+    .footer-zoos-link {
+        margin-left: 0;
+    }
+
+    .footer-contact-link {
+        margin-left: 5px;
+    }
+
+    .right-footer-container {
+        margin-left: 0;
+        width: auto;
+        height: auto;
+    }
+
+    .site-authors-container {
+        left: 86px;
+        top: 193px;
+        right: -20px;
+        gap: 13px;
+    }
+
+    .authors-text {
+        font-size: 15px;
+        line-height: 18px;
+    }
+
+    .donate-footer {
+        top: 1367px;
+        height: 334px;
+    }
+
+    .donate-footer-nav-link-container {
+        gap: 35px;
+    }
+
+    .donate-map-link {
+        margin-left: 7px;
+    }
+
+    .donate-zoo-link {
+        margin-left: -6px;
+    }
+
+    .donate-contact-link {
+        margin-left: -2px;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+
+    .main-footer {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .main-footer-container {
+        margin-left: 20px;
+        width: auto;
+    }
+
+    .footer-nav-link-container {
+        margin-left: 20px;
+    }
+
+    .right-footer-container {
+        margin-left: -100px;
+        width: auto;
+    }
+
+    .input-email-form {
+        width: auto;
+    }
+
+    .site-authors-container {
+        left: 700px;
+        top: 300px;
+    }
+
+    .donate-footer {
+        width: 100%;
+        overflow: hidden;
+    }
+}
+
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+    .main-footer-container {
+        margin-left: 10px;
+    }
+
+    .footer-nav-link-container {
+        margin-left: -130px;
+    }
+
+    .right-footer-container {
+        margin-left: -300px;
+    }
+
+    .site-authors-container {
+        left: 380px;
+        top: 250px;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 639px) {
+    .main-footer-container {
+        margin-left: 10px;
+    }
+
+    .donate-footer-button {
+        margin-top: 25px;
+    }
+    .social-media-container {
+        left: 60px;
+        flex-direction: row;
+        top: 70px;
+    }
+    
+    .site-authors-container {
+        left: 40px;
+        top: 180px;
+    }
+
+    .authors-text {
+        font-size: 16px;
+        line-height: 17px;
+    }
+}

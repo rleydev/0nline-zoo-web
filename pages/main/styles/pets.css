@@ -1,0 +1,724 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.pets-section {
+    position: absolute;
+    top: 1503px;
+    width: 100%;
+    height: 1106px;
+    left: 0;
+    right: 0;
+}
+
+.pets-main-container {
+    display: flex;
+    flex-direction: row;
+    grid-template-columns: 36px 100% 36px;
+    margin-left: 138px;
+    gap: 20px;
+    align-items: center;
+}
+
+.arrow-button-left { 
+    object-fit: fill;
+    width: 62px;
+    height: 62px;
+}
+
+.arrow-button-left:hover {
+    cursor: pointer;
+}
+
+.pets-container {
+    display: none;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+    column-width: 366px;
+    animation: 3s ease-in-out;
+}
+
+.next,
+.active {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    column-gap: 30px;
+    row-gap: 20px;
+    column-width: 366px;
+    animation: 0.5s ease-in-out;
+}
+
+.next {
+    position: absolute;
+    top: 0;
+    width: 100%;
+}
+
+.pets-preview {
+    width: 368px;
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+    border-color: rgb(254, 144, 19);
+}
+
+.to-left {
+    animation-name: left;
+}
+
+.to-right {
+    animation-name: right;
+    animation-direction: reverse;
+}
+
+.from-left {
+    animation-name: left;
+    animation-direction: reverse;
+}
+
+.from-right {
+    animation-name: right;
+}
+
+@keyframes left {
+    from {
+        left: 0;
+    }
+    to {
+        left: -100%;
+    }
+}
+
+@keyframes right {
+    from {
+        left: 100%;
+    }
+    to {
+        left: 0;
+    }
+}
+
+.pet-image-container {
+    width: 366px;
+    height: 366px;
+}
+
+.pet-image {
+    width: 100%;
+    object-fit: fill;
+}
+
+.panda-tooltip {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    top: 365px;
+    left: 110px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.eagle-tooltip {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    top: 365px;
+    left: 510px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.gorilla-tooltip {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    top: 365px;
+    left: 910px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.sloth-tooltip {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    top: 815px;
+    left: 110px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.cheetas-tooltip {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    top: 815px;
+    left: 510px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.penguins-tooltip {
+    width: 160px;
+    height: 70px;
+    position: absolute;
+    top: 815px;
+    left: 910px;
+    background-color: rgb(255, 255, 255);
+    border: solid;
+    border-width: 1px;
+    border-radius: 5px;
+
+    opacity: 0;
+    transition: opacity 0.15s;
+
+    pointer-events: none;
+    white-space: nowrap;
+}
+
+.pet-image-container:hover .panda-tooltip {
+    opacity: 1;
+    
+}
+
+.pet-image-container:hover .eagle-tooltip {
+    opacity: 1;
+}
+
+.pet-image-container:hover .gorilla-tooltip {
+    opacity: 1;
+}
+
+.pet-image-container:hover .sloth-tooltip {
+    opacity: 1;
+}
+
+.pet-image-container:hover .cheetas-tooltip {
+    opacity: 1;
+}
+.pet-image-container:hover .penguins-tooltip {
+    opacity: 1;
+}
+
+.pet-image-container:hover > img {
+    -webkit-filter: brightness(60%);
+    -webkit-transition: all 1s ease;
+    -moz-transition: all 1s ease;
+    -o-transition: all 1s ease;
+    -ms-transition: all 1s ease;
+    transition: all 1s ease;
+    transform: scale(1.027);
+}
+
+.tooltip-text {
+    margin-top: 7.81px;
+    margin-left: 10px;
+    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 400px;
+    line-height: 22px;
+}
+
+.pet-description-container {
+    display: grid;
+    grid-template-columns: 1fr 55px;
+    row-gap: 11px;
+    width: 366px;
+}
+
+.description-text {
+    font-family: 'Roboto';
+    margin-left: 16px;
+}
+
+.pet-name-text {
+    margin-top: 8px;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-transform: uppercase;
+    color: black;
+}
+
+.location-name-text {
+    margin-bottom: 13px;
+    font-size: 15px;
+    font-weight: 300;
+    line-height: 18px;
+    color: black;
+}
+
+.banana-icon {
+    width: 33px;
+    margin-top: 10px;
+}
+
+.meat-fish-icon {
+    width: 48px;
+    margin-top: 8px;
+}
+
+.arrow-button {
+    object-fit: fill;
+    width: 62px;
+    height: 62px;
+}
+
+.arrow-button:hover {
+    cursor: pointer;
+}
+
+.palm-image {
+    position: relative;
+    top: -234px;
+    left: 0;
+    object-fit: cover;
+}
+
+.choose-button {
+    position: absolute;
+    left: 651px;
+    right: auto;
+    width: 298px;
+    top: 950px;
+    bottom: 100px;
+    background-color: rgb(254,144,19);
+    border-radius: 25px;
+    text-align: center;
+}
+
+.choose-button:hover {
+    cursor: pointer;
+    background: rgb(219, 150, 120);
+}
+
+.choose-fav-button {
+    position: relative;
+    top: 16px;
+    font-family: 'Roboto';
+    text-transform: uppercase;
+    color: white;
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+}
+
+.strelizia-image {
+    position: absolute;
+    object-fit: cover;
+    bottom: 0;
+    right: 0;
+}
+
+@media only screen and (max-width: 1000px) {
+    .pets-section {
+        top: 1252px;
+        overflow-x: hidden;
+    }
+
+    .pets-main-container {
+        margin-left: 30px;
+        gap: 0;
+        grid-template-rows: 1fr 1fr 1fr;
+    }
+
+    .pets-container {
+        row-gap: 92px;
+        column-gap: 29px;
+        column-width: auto;
+    }
+
+    .pets-preview {
+        width: 296px;
+    }
+
+    .pet-image-container:hover .eagle-tooltip {
+        display: none;
+    }
+    
+    .pet-image-container:hover .panda-tooltip {
+        display: none;
+    }
+
+    .pet-image-container:hover .sloth-tooltip {
+        display: none;
+    }
+
+    .pet-image-container:hover .cheetas-tooltip {
+        display: none;
+    }
+
+    .pet-image-container:hover .gorilla-tooltip {
+        display: none;
+    }
+
+    .pet-image-container:hover .penguins-tooltip {
+        display: none;
+    }
+    .pet-image-container {
+        width: 294px;
+        height: 294px;
+    }
+
+    .pet-description-container {
+        width: auto;
+    }
+
+    .banana-icon {
+        margin-left: 8px;
+    }
+
+    .left-arrow-container {
+        position: absolute;
+        top: 368px;
+        left: 353px;
+    }
+
+    .right-arrow-container {
+        position: absolute;
+        top: 368px;
+        left: 586px;
+    }
+
+    .palm-image {
+        content: url(../../../assets/images/palm_foto1000px.png);
+        top: 68px;
+    }
+
+    .choose-button {
+        left: 351px;
+        top: 880px;
+        right: 351px;
+        height: 54px;
+    }
+
+    .strelizia-image {
+        top: 895px;
+        content: url(../../../assets/images/strelitzia1000px.png);
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .pets-section {
+        top: 880px;
+        height: 970px;
+        overflow: hidden;
+    }
+
+    .pets-main-container {
+        margin-left: 20px;
+        margin-right: 20px;
+    }
+
+    .left-arrow-container {
+        top: 344px;
+        left: 242px;
+    }
+
+    .pets-container {
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .pets-preview {
+        width: 285.24px;
+        height: 333px;
+    }
+
+    .pet-image-container {
+        width: 283px;
+        height: 283px;
+    }
+
+    .description-text {
+        margin-left: 11.47px;
+    }
+
+    .pet-name-text {
+        font-size: 13px;
+        line-height: 17px;
+    }
+
+    .location-name-text {
+        font-size: 12px;
+        line-height: 15px;
+        margin-top: -3px;
+    }
+
+    .banana-icon {
+        width: 25.72px;
+        margin-left: 20px;
+    }
+
+    .pets-container .pets-preview:nth-child(5) {
+        display: none;
+    }
+
+    .pets-container .pets-preview:nth-child(6) {
+        display: none;
+    }
+
+    .right-arrow-container {
+        top: 344px;
+        left: 334px;
+    }
+
+    .meat-fish-icon {
+        width: 37.41px;
+        margin-left: 12px;
+    }
+
+    .palm-image {
+        content: url(../../../assets/images/palm_foto640px.png);
+        top: 10px;
+    }
+
+    .choose-button {
+        width: 298px;
+        height: 54px;
+        top: 815px;
+        left: 171px;
+    }
+
+    .strelizia-image {
+        content: url(../../../assets/images/strelitzia1-640px.png);
+        top: 840px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+
+    .pets-section {
+        height: 1522px;
+        top: 753px;
+    }
+
+    .pets-main-container {
+        margin-left: 10px;
+        margin-right: 24.76px;
+    }
+
+    .left-arrow-container {
+        display: none;
+    }
+
+    .right-arrow-container {
+        display:  none;
+    }
+
+    .pets-container {
+        display: flex;
+        flex-direction: column;
+        row-gap: 0;
+        gap: 19px;
+    }
+
+    .pets-container-320px {
+        display: none;
+    }
+
+    .palm-image {
+        content: url(../../../assets/images/palm_foto320px.png);
+        top: 62px;
+    }
+
+    .choose-button {
+        top: 1408px;
+        left: 10px;
+    }
+
+    .strelizia-image {
+        content: url(../../../assets/images/strelitzia320px.png);
+        top: 1455px;
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+
+    .pets-section {
+        width: 100%;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .pets-main-container {
+        margin-left: 5px;
+        gap: 5px;
+        overflow-y: hidden;
+    }
+
+    .pets-container {
+        column-width: auto;
+        margin-left: 10px;
+        column-gap: 5px;
+        row-gap: 75px;
+        overflow-y: hidden;
+        overflow-x: hidden;
+    }
+
+    .pets-preview {
+        width: 270px;
+    }
+
+    .pet-image-container {
+        width: 268px;
+        height: 268px;
+    }
+
+    .pet-description-container {
+        width: 275px;
+    }
+
+    .palm-image {
+        top: 145px;
+        content: url(../../../assets/images/palm_foto1000px.png);
+    }
+
+    .strelizia-image {
+        content: url(../../../assets/images/strelitzia1000px.png);
+    }
+
+    .choose-button {
+        left: 300px;
+        right: auto;
+        width: 298px;
+    }
+
+    .meat-fish-icon {
+        margin-left: -3px;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+
+    .pets-main-container {
+        margin-left: 10px;
+    }
+
+    .pets-container {
+        column-gap: 5px;
+    }
+
+    .pets-preview {
+        width: 202px;
+    }
+
+    .pet-image-container {
+        width: 200px;
+        height: 200px;
+    }
+
+    .left-arrow-container {
+        top: 300px;
+        left: 200px;
+    }
+
+    .right-arrow-container {
+        top: 300px;
+        left: 380px;
+    }
+
+    .palm-image {
+        top: 200px;
+    }
+
+    .choose-button {
+        right: auto;
+        left: 190px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 639px) {
+
+    .pets-main-container {
+        margin-left: 5px;
+        margin-right: 5px;
+    }
+
+    .pets-container {
+        column-gap: 5px;
+    }
+
+    .pets-preview {
+        width: 152px;
+        height: 230px;
+    }
+
+    .pet-image-container {
+        width: 150px;
+        height: 150px;
+    }
+
+    .pet-name-text {
+        width: 100px;
+    }
+
+    .location-name-text {
+        margin-top: 0;
+    }
+
+    .meat-fish-icon {
+        margin-left: 0;
+    }
+
+    .banana-icon {
+        margin-left: 0;
+    }
+
+    .left-arrow-container {
+        top: 250px;
+        left: 80px;
+    }
+
+    .right-arrow-container {
+        top: 250px;
+        left: 180px;
+    }
+
+    .palm-image {
+        top: 220px;
+    }
+
+    .choose-button {
+        top: 700px;
+        left: 10px;
+    }
+}

@@ -1,0 +1,298 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.backstage-section {
+    position: absolute;
+    top: 780px;
+    right: 0;
+    left: 0;
+    width: 100%;
+}
+
+.watch-button-mobile {
+    display: none;
+}
+
+.backstage-container {
+    display: flex;
+    margin-top: 140px;
+    margin-left: 219px;
+    margin-right: 220px;
+    gap: 87px;
+}
+
+.text-backstage-container {
+    display: flex;
+    flex-direction: column;
+    gap: 54px;
+}
+
+.old-man-image {
+    object-fit: fill;
+}
+
+.first-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.site-info {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 20.8px;
+    color: rgb(51, 59, 65);
+}
+
+.second-text-container {
+    display: flex;
+    flex-direction: column;
+    gap: 34px;
+}
+
+.how-it-works {
+    font-family: 'Roboto';
+    font-size: 24px;
+    font-weight: 400;
+    line-height: 28.8px;
+    color: rgb(51, 59, 65);
+}
+
+.description {
+    font-family: 'Roboto';
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgb(51, 59, 65);
+}
+
+.backstage-flowers-img {
+    position: absolute;
+    right: 0;
+    top: 792px;
+    object-fit: cover;
+}
+
+@media only screen and (max-width: 1000px) {
+    .backstage-section {
+        top: 584px;
+        overflow-x: hidden;
+    }
+
+    .backstage-container {
+        margin-right: 30px;
+        margin-top: 109px;
+        margin-left: 30px;
+        gap: 31px;
+    }
+
+    .backstage-flowers-img {
+        display: none;
+    }
+
+    .old-man-image {
+        content: url(../../../assets/images/bamboo-cap1000px.jpg); 
+    }
+
+    .text-backstage-container {
+        margin-top: -10px;
+    }
+}
+
+@media only screen and (max-width: 640px) {
+    .backstage-section {
+        top: 373px;
+    }
+
+    .backstage-container {
+        margin-top: 60px;
+        margin-left: -8px;
+        margin-right: 125px;
+    }
+
+    .old-man-image {
+        display: none;
+    }
+
+    .text-backstage-container {
+        margin-top: 0;
+        gap: 30px;
+    }
+
+    .first-text-container {
+        gap: 22px;
+    }
+
+    .site-info {
+        margin-left: -3px;
+    }
+
+    .second-text-container {
+        gap: 20px;
+    }
+
+    .description {
+        margin-left: -3px;
+    }
+
+    .backstage-flowers-img {
+        display: flex;
+        content: url(../../../assets/images/flower_foto1640px.png);
+        top: 368px;
+    }
+}
+
+@media only screen and (max-width: 320px) {
+    .backstage-section {
+        top: 220.96px;
+    }
+
+    .watch-button-mobile {
+        display: flex;
+        width: 298px;
+        height: 54px;
+        border: none;
+        border-radius: 25px;
+        background-color: rgba(249, 128, 75, 1);
+        justify-content: center;
+        align-items: center;
+        font-family: 'Roboto';
+        font-size: 16px;
+        line-height: 22.4px;
+        color: white;
+        text-transform: uppercase;
+
+        margin-top: 20.04px;
+        margin-left: 11px;
+    }
+
+    .backstage-container {
+        margin-top: 30px;
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 0;
+    }
+
+    .first-text-container {
+        gap: 10px;
+    }
+
+    .backstage-title {
+        font-size: 24px;
+        line-height: 28.8px;
+    }
+
+    .site-info {
+        margin-left: 3px;
+        width: auto;
+    }
+
+    .text-backstage-container {
+        gap: 20px;
+    }
+
+    .second-text-container {
+        gap: 10px;
+    }
+
+    .how-it-works {
+        margin-left: 3px;
+    }
+
+    .description {
+        margin-left: 0;
+    }
+
+    .backstage-flowers-img {
+        content: url(../../../assets/images/flower_foto320px.png);
+        top: 260px;
+    }
+
+    .watch-button-mobile:hover {
+        cursor: pointer;
+    background: linear-gradient(113.96deg, #F9804B 3.49%, #FE9013 200.44%);
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+
+    .backstage-section {
+        width: 100%;
+        overflow-x: hidden;
+    }
+
+    .backstage-flowers-img {
+        display: none;
+    }
+
+    .backstage-container {
+        margin-right: auto;
+        margin-left: 30px;
+        gap: 10px;
+    }
+
+    .text-backstage-container {
+        gap: 10px;
+        height: 400px;
+        overflow: hidden;
+        margin-right: 10px;
+    }
+
+    .second-text-container {
+        gap: 10px;
+    }
+
+    .backstage-title {
+        font-size: 24px;
+        line-height: 27px;
+    }
+
+}
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+    .backstage-container {
+        margin-left: 5px;
+        gap: 5px;
+    }
+
+    .old-man-image {
+        width: 230px;
+        height: 208px;
+    }
+
+    .text-backstage-container {
+        gap: 10px;
+    }
+
+}
+
+@media only screen and (min-width: 321px) and (max-width: 639px) {
+    .backstage-flowers-img {
+        display: none;
+    }
+
+    .backstage-container {
+        margin-right: 10px;
+        margin-left: 10px;
+        margin-top: 50px;
+        gap: 10px;
+    }
+
+    .text-backstage-container {
+        gap: 10px;
+    }
+
+    .first-text-container {
+        gap: 10px;
+        
+    }
+
+    .second-text-container {
+        gap: 10px;
+    }
+
+    .backstage-title {
+        font-size: 30px;
+        line-height: 30.5px;
+    }
+}

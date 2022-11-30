@@ -1,0 +1,970 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+.pick-friend-section {
+    position: absolute;
+    margin-top: 0px;
+    width: 100%;
+    height: 1482px;
+    background:  linear-gradient(to top right , rgba(254, 210, 144, 0.7),
+    rgba(254, 189, 171, 1), rgba(254, 210, 144, 0.7));
+}
+
+.main-pick-container {
+
+    width: 1160px;
+    height: 1262px;
+    margin-left: 220px;
+    margin-right: 220px;
+    margin-top: 40px;
+
+    display: flex;
+    flex-direction: column;
+    column-gap: 60px;
+
+}
+
+.donate-text-conatiner {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
+}
+
+.title-donate-text {
+    line-height: 47px;
+    color: white;
+    width: 1156px;
+}
+
+.description-donate-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    color: white;
+    text-align: left;
+    margin-right: 15px;
+}
+
+.donate-inf-text {
+    margin-top: 40px;
+    color: rgba(254, 144, 19, 1);
+}
+
+.pick-pet-container {
+    margin-top: 60px;
+    width: 1160px;
+    height: 964px;
+    background-color:rgba(253, 253, 255, 0.52);
+    border-radius: 20px;
+}
+
+.pick-pet-subcontainer {
+    margin-top: 40px;
+    margin-left: 92px;
+    margin-right: 92px;
+    margin-bottom: 61.98px;
+}
+
+.donate-pick-pet-title-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.donate-pick-pet-title {
+    color: rgba(254, 144, 19, 1);
+    margin-left: 250px;
+}
+
+.donate-pick-pet-description {
+    font-weight: 400;
+    font-size: 24px;
+    line-height: 29px;
+}
+
+.panda-diet-container {
+    margin-top: 60px;
+    margin-left: 215px;
+    display: flex;
+    flex-direction: row;
+}
+
+.number-panda-container {
+    margin-top: 105px;
+    display: flex;
+    flex-direction: column;
+    gap: 11px;
+    align-items: center;
+}
+
+.number-panda {
+    font-weight: 500;
+    font-size: 72px;
+    line-height: 58px;
+    color: black;
+
+}
+
+.text-diet {
+    font-weight: 400px;
+    font-size: 16px;
+    line-height: 22px;
+}
+
+.x-icon {
+    object-fit: fill;
+    margin-left: 11px;
+    margin-top: 130px;
+    height: 14px;
+    width: 14px;
+}
+
+.panda-widget-icon {
+    object-fit: fill;
+    margin-left: 64px;
+    width: 284px;
+    height: 246px;
+}
+
+.amount-donate-range-container {
+    display: flex;
+    flex-direction: column;
+    margin-top: 49.53px;
+}
+
+.amount-title {
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+}
+
+.slider-background {
+    background-color: rgba(64, 73, 80, 1);
+    margin-top: 17px;
+    border-radius: 2px;
+}
+
+.slider-line {
+    height: 2px;
+    margin-left: 31px;
+    margin-right: 30px;
+    background-color: rgba(114, 130, 142, 1);
+    margin-top: 12px;
+    margin-bottom: 13px;
+
+    display: flex;
+    flex-direction: row;
+    gap: 120px;
+    align-items: center;
+}
+
+.slider-thumb {
+    width: 10px;
+    height: 10px;
+    background-color: rgba(255, 238, 46, 1);
+    border-radius: 50%;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-seceltion-thumb {
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.cursor-seceltion-thumb:hover {
+    cursor: pointer;
+}
+
+.slider-selected-thumb-rings {
+    width: 40px;
+    height: 40px;
+    object-fit: fill;
+}
+
+.amount-number-container {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: row;
+    gap: 58px;
+}
+
+.amount-dollars-container {
+    display: flex;
+    flex-direction: row;
+    gap: 2px;
+    align-items: center;
+}
+
+.dollar-sign {
+    object-fit: fill;
+    width: 10px;
+    height: 20px;
+}
+
+.amount-dollars {
+    font-size: 26px;
+    font-weight: 500px;
+    line-height: 36.4px;
+    color: rgba(51, 59, 65, 1);
+}
+
+.amount-dollars-selected {
+    font-size: 26px;
+    font-weight: 500px;
+    line-height: 36.4px;
+    color: rgba(254, 144, 19, 1);
+}
+
+.five-hundreed-dollars {
+    margin-left: 15px;
+}
+
+.another-amount-container {
+    margin-top: 50px;
+    display: flex;
+    flex-direction: column;
+}
+
+.twenty-five-dollars {
+    margin-left: 30px;
+}
+
+.another-amount-input {
+    width: 268px;
+    height: 54px;
+    margin-left: 354px;
+    padding-top: 16px;
+    padding-left: 9px;
+    padding-bottom: 16px;
+    padding-right: 10px;
+    border-radius: 2px;
+    color: rgba(146, 150, 153, 1);
+    -moz-appearance: textfield;
+    background: url(../../../assets/icons/dollar_sign.svg) no-repeat scroll 248px 17px;
+}
+
+.another-amount-input::-webkit-outer-spin-button,
+.another-amount-input::-webkit-inner-spin-button {
+    -webkit-appearance: none;
+    margin: 0;
+}
+
+.month-once-container {
+    margin-top: 27px;
+    margin-left: 382px;
+    display: flex;
+    flex-direction: row;
+    gap: 50px;
+}
+
+.label-button-radio-container {
+    display: flex;
+    flex-direction: row;
+    gap: 10px;
+    align-items: center;
+    justify-content: center;
+}
+
+.month-once-input {
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+  
+    border-radius: 50%;
+    width: 16px;
+    height: 16px;
+  
+    border: 1px solid rgba(254, 144, 19, 1);
+    transition: 0.2s all linear;
+    outline: none;
+}
+
+.month-once-input:checked {
+    border: 8px solid rgba(75, 146, 0, 1);
+}
+
+.month-once-label {
+    font-family: 'Roboto';
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 22.4px;
+    color: rgba(51, 59, 65, 1);
+}
+
+.feed-a-friend-now-container {
+    margin-top: 30px;
+    margin-left: 342px;
+    margin-left: 336px;
+    margin-bottom: 62px;
+    display: flex;
+    flex-direction: column;
+    gap: 30.02px;
+}
+
+.feed-a-friend-now-button {
+    width: 298px;
+    height: 54px;
+    background: linear-gradient(to bottom right, rgba(249, 128, 75, 1), rgba(254, 144, 19, 1));
+    border-radius: 25px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.feed-a-friend-now-button:hover {
+    cursor: pointer;
+    background-color: rgb(219, 150, 120);
+}
+
+.feed-a-friend-now {
+    font-size: 16px;
+    font-weight: 500;
+    line-height: 22.4px;
+    text-transform: uppercase;
+    color: white;
+}
+
+.share-text {
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22.4px;
+    color: rgba(51, 59, 65, 1);
+}
+
+.dollar-input-image {
+    display: none;
+}
+
+@media screen and (max-width: 1000px) {
+    .pick-friend-section {
+        height: 1337px;
+        overflow-x: hidden;
+        overflow-y: hidden;
+    }
+
+    .main-pick-container {
+        margin-left: 30px;
+        margin-right: 30px;
+        width: auto;
+        margin-top: 44px;
+        height: auto;
+        column-gap: 40px;
+    }
+
+    .donate-text-conatiner {
+        gap: 30px;
+    }
+
+    .title-donate-text {
+        width: auto;
+        margin-right: 162px;
+    }
+
+    .description-donate-text {
+        margin-right: 30px;
+    }
+
+    .donate-inf-text {
+        margin-top: 45px;
+    }
+
+    .pick-pet-container {
+        margin-top: 40px;
+        width: auto;
+        height: 918px;
+    }
+
+    .pick-pet-subcontainer {
+        margin-left: 47px;
+        margin-right: 47px;
+        margin-top: 20px;
+    }
+
+    .donate-pick-pet-title-container {
+        gap: 10px;
+    }
+
+    .donate-pick-pet-title {
+        margin-left: 185px;
+    }
+
+    .panda-diet-container {
+        margin-left: 150px;
+    }
+
+    .amount-donate-range-container {
+        margin-left: 18px;
+    }
+
+    .slider-background {
+        width: 810px;
+    }
+
+    .slider-line {
+        margin-left: 10px;
+        margin-right: 16px;
+    }
+
+    .slider-line > div:nth-of-type(1) {
+        display: none;
+    }
+
+    .amount-number-container > div:nth-of-type(1) {
+        display:  none;
+    }
+
+    .five-hundreed-dollars {
+        margin-left: 4px;
+    }
+
+    .two-hundreed-fifty-dollars {
+        margin-left: 16px;
+    }
+
+    .another-amount-container {
+        margin-left: -65px;
+    }
+
+    .another-amount-input {
+        font-size: 16px;
+        padding-right: 123px;
+    }
+
+    .month-once-container {
+        margin-top: 24px;
+    }
+
+    .feed-a-friend-now-container {
+        margin-left: 336px;
+    }
+
+    .feed-a-friend-now-button {
+        margin-left: 6px;
+    }
+
+    .share-text {
+        margin-left: 3px;
+    }
+}
+
+@media screen and (max-width: 640px) {
+
+    .main-pick-container {
+        margin-left: 20px;
+        margin-right: 20px;
+        margin-top: 30px;
+    }
+
+    .donate-text-conatiner {
+        gap: 20px;
+    }
+
+    .title-donate-text {
+        font-size: 24px;
+        line-height: 28.8px;
+        margin-right: 0;
+    }
+
+    .description-donate-text {
+        margin-right: 10px;
+    }
+
+    .donate-inf-text {
+        margin-top: 30px;
+    }
+
+    .pick-pet-container {
+        margin-top: 30px;
+    }
+
+    .pick-pet-subcontainer {
+        margin-top: 30px;
+        margin-left: 0px;
+        margin-right: 0px;
+    }
+
+    .donate-pick-pet-title-container {
+        gap: 20px;
+    }
+
+    .donate-pick-pet-title {
+        margin-left: 69px;
+    }
+
+    .donate-pick-pet-description {
+        text-align: center;
+    }
+
+    .panda-diet-container {
+        margin-left: 27px;
+        margin-top: 50px;
+    }
+
+    .amount-donate-range-container {
+        margin-left: 0;
+        margin-top: 41.53px;
+    }
+
+    .amount-title {
+        margin-left: 10px;
+    }
+
+    .slider-background {
+        width: auto;
+        margin-top: 7px;
+    }
+
+    .slider-line > div:nth-of-type(1) {
+        display:none;
+        margin: 0;
+    }
+
+    .slider-line > div:nth-of-type(2) {
+        display: none;
+    }
+
+    .slider-line > div:nth-of-type(3) {
+        display: none;
+    }
+
+    .slider-line {
+        margin-left: 35px;
+        margin-right: 35px;
+    }
+
+    .amount-number-container > div:nth-child(2) {
+        display: none;
+    }
+
+    .amount-number-container > div:nth-child(3) {
+        display: none;
+    }
+
+
+    .hundreed-dollars-text {
+        color: rgba(254, 144, 19, 1);
+    }
+
+    .amount-number-container {
+        margin-left: 12px;
+    }
+
+    .another-amount-container {
+        margin-left: -190px;
+    }
+
+    .another-amount-input {
+        width: 180px;
+        height: 42px;
+        margin-left: 400px;
+        padding-top: 15px;
+        padding-left: 5px;
+        padding-right: 0;
+    }
+
+    .month-once-container {
+        margin-top: 30px;
+    }
+
+    .dollar-input-image {
+        width: 10px;
+        height: 20px;
+        position: absolute;
+        display: flex;
+        left: 390px;
+        top: 1037px;
+    }
+
+    @media screen and (max-width: 320px) {
+        .pick-friend-section {
+            height: 1148px;
+        }
+
+        .main-pick-container {
+            margin-left: 10px;
+            margin-right: 10px;
+        }
+
+        .description-donate-text {
+            margin-right: 0;
+        }
+
+        .donate-inf-text {
+            font-size: 24px;
+            line-height: 28.8px;
+        }
+
+        .pick-pet-container {
+            height: auto;
+        }
+
+        .pick-pet-subcontainer {
+            margin-top: 20px;
+            margin-bottom: auto;
+        }
+
+        .donate-pick-pet-title-container {
+            gap: 10px;
+        }
+
+        .donate-pick-pet-title {
+            font-size: 24px;
+            line-height: 28.8px;
+            margin-left: 34px;
+        }
+
+        .donate-pick-pet-description {
+            font-size: 16px;
+            line-height: 22.4px;
+        }
+
+        .panda-diet-container {
+            margin-top: 0;
+            margin-left: 0;
+        }
+
+        .number-panda-container {
+            margin-top: 69.49px;
+            gap: 6.2px;
+        }
+
+        .number-panda {
+            margin-left: 0px;
+            font-size: 40.6px;
+            line-height: 32.48px;
+        }
+
+        .text-diet {
+            font-size: 9.02px;
+            line-height: 12.63px;
+            width: 89.66px;
+        }
+
+        .x-icon {
+            width: 7.89px;
+            height: 7.89px;
+            margin-left: 6.2px;
+            margin-top: 83.59px;
+        }
+
+        .panda-widget-icon {
+            width: 160.15px;
+            height: 138.72px;
+            margin-left: 36.09px;
+            margin-top: 10.28px;
+        }
+
+        .amount-donate-range-container {
+            margin-top: 4.3px;
+        }
+
+        .amount-title {
+            margin-left: 0;
+        }
+
+        .slider-background {
+            margin-top: 8.5px;
+            height: 13.5px;
+        }
+
+        .slider-line {
+            margin-left: 18px;
+            margin-right: 17.5px;
+            margin-top: 6px;
+            height: 1px;
+            gap: 60px;
+            margin-bottom: auto;
+        }
+
+        .slider-thumb {
+            width: 5px;
+            height: 5px;
+        }
+
+        .slider-selected-thumb-rigns {
+            height: 20px;
+            width: 20px;
+        }
+
+        .amount-number-container {
+            margin-top: 6px;
+            margin-left: 5px;
+            gap: 36.5px;
+        }
+
+        .amount-dollars-container {
+            gap: 1px;
+        }
+
+        .dollar-sign {
+            width: 5px;
+            height: 10px;
+        }
+
+        .amount-dollars {
+            font-size: 13px;
+            line-height: 18.2px;
+        }
+
+        .two-hundreed-fifty-dollars {
+            margin-left: 0;
+        }
+
+        .twenty-five-dollars {
+            margin-left: 10px;
+        }
+
+        .another-amount-container {
+            margin-top: 25px;
+            margin-left: -340px;
+            margin-bottom: 19.98px;
+        }
+        .month-once-container {
+            margin-top: 23px;
+        }
+
+        .dollar-input-image {
+            top: 893px;
+            left: 230px;
+        }
+
+        .feed-a-friend-now-container {
+            margin-top: 28px;
+            margin-bottom: auto;
+        }
+    }
+}
+
+@media only screen and (min-width: 1001px) and (max-width: 1599px) {
+    .pick-friend-section {
+        width: 100%;
+        overflow: hidden;
+    }
+
+    .main-pick-container {
+        margin-left: 20px;
+        width: auto;
+        margin-right: 20px;
+    }
+
+    .title-donate-text {
+        width: 950px;
+    }
+
+    .pick-pet-container {
+        height: auto;
+        width: auto;
+    }
+
+    .pick-pet-subcontainer {
+        margin-left: 20px;
+    }
+
+    .panda-diet-container {
+        margin-left: 100px;
+    }
+
+    .slider-line {
+        gap: 100px;
+    }
+
+    .amount-donate-range-container {
+        width: 850px;
+    }
+
+    .amount-number-container {
+        gap: 40px;
+    }
+}
+
+@media only screen and (min-width: 641px) and (max-width: 999px) {
+
+
+    .pick-pet-container {
+        height: auto;
+    }
+
+    .pick-pet-subcontainer {
+        margin-left: 10px;
+        margin-bottom: auto;
+    }
+
+    .donate-pick-pet-title {
+        margin-left: 0px;
+        text-align: center;
+    }
+
+    .panda-diet-container {
+        margin-left: 10px;
+    }
+
+    .amount-donate-range-container {
+        margin-left: 0;
+        margin-top: 10px;
+    }
+
+    .slider-background {
+        width: 550px;
+    }
+
+    .amount-number-container {
+        gap: 10px;
+    }
+
+    .another-amount-container {
+        margin-top: 0;
+    }
+
+    .another-amount-input {
+        margin-left: 200px;
+    }
+
+    .month-once-container {
+        margin-top: 10px;
+        margin-left: 230px;
+    }
+
+    .feed-a-friend-now-container {
+        margin-top: 10px;
+        margin-bottom: 0;
+        margin-left: 200px;
+        gap: 10px;
+    }
+
+    .slider-line {
+        gap: 75px;
+    }
+}
+
+@media only screen and (min-width: 321px) and (max-width: 639px) {
+
+
+    .donate-text-conatiner {
+        width: 290px;
+    }
+
+    .donate-inf-text {
+        width: 290px;
+    }
+
+    .main-pick-container {
+        height: auto;
+    }
+
+    .pick-pet-container {
+        height: auto;
+    }
+
+    .pick-pet-subcontainer {
+        width: 281px;
+        margin-bottom: 0;
+    }
+
+    .donate-pick-pet-title-container {
+        gap: 10px;
+    }
+
+    .donate-pick-pet-title {
+        margin-left: 20px;
+        font-size: 24px;
+        line-height: 27px;
+
+    }
+
+    .donate-pick-pet-description {
+        font-size: 20px;
+        line-height: 20px;
+        width: 280px;
+    }
+
+    .panda-diet-container {
+        margin-left: 5px;
+        margin-top: 10px;
+    }
+
+    .text-diet {
+        text-align: center;
+    }
+
+    .x-icon {
+        margin-left: 5px;
+    }
+
+    .panda-widget-icon {
+        margin-left: 5px;
+        width: 150px;
+        height: auto;
+    }
+
+    .amount-donate-range-container {
+        margin-top: 10px;
+    }
+
+    .slider-background {
+        width: 281px;
+    }
+
+    .slider-line {
+        margin-left: 10px;
+        margin-right: 10px;
+        gap: 52px;
+    }
+
+    .slider-line .cursor-seceltion-thumb:nth-of-type(3) {
+        display: none;
+    }
+
+
+
+    .amount-number-container {
+        gap: 5px;
+        margin-left:2px;
+    }
+
+    .dollar-sign {
+        width: 5px;
+        height: 10px;
+    }
+
+    .dollar-input-image {
+        top: 1110px;
+        left: 240px;
+    }
+
+    .amount-dollars {
+        font-size: 16px;
+        line-height: 17px;
+    }
+
+
+    .another-amount-input {
+        margin-left: 250px;
+    }
+
+    .month-once-container {
+        margin-left: 250px;
+    }
+
+    .feed-a-friend-now-container {
+        margin-left: 192px;
+        margin-bottom: 0;
+        gap: 10px;
+    }
+
+    .feed-a-friend-now-button {
+        margin-left: 10px;
+        width: 259px;
+    }
+
+    .share-text {
+        width: 300px;
+        font-size: 12px;
+        line-height: 30px;
+        margin-left: 25px;
+    }
+}

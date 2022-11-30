@@ -1,0 +1,44 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    list-style: none;
+    text-decoration: none;
+}
+
+*, *:before, *:after {
+    box-sizing: border-box;
+}
+
+p {
+    font-family: 'Roboto';
+    margin: 0;
+}
+
+h1 {
+    font-family: 'Roboto';
+    position: relative;
+    color: white;
+    text-align: center;
+    line-height: 22.82px;
+    font-weight: 400;
+    text-align: center;
+    font-size: 19.01px;
+}
+
+h2 {
+    font-family: 'Roboto';
+    font-size: 48px;
+    font-weight: 400;
+    line-height: 57.6px;
+    color: rgb(51, 59, 65);
+}
+
+h3 {
+    font-family: 'Roboto';
+    font-size: 36px;
+    font-weight: 400;
+    line-height: 46.8px;
+    color: rgba(51, 59, 65, 1);
+}
